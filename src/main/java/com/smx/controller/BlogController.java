@@ -36,7 +36,7 @@ public class BlogController {
         return new Result(200, "成功", list);
     }
 
-    @GetMapping(value = "/getBlogs")
+    @GetMapping(value = "/getBlogs2")
     public String goBlogs(final Model model,
                           @RequestParam(value = "page", required = false, defaultValue = "1") final int pageNo) {
         PageHelper.startPage(1, 1);
